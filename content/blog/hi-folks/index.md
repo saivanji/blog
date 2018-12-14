@@ -1,12 +1,55 @@
 ---
 title: New Beginnings
-date: "2015-05-28T22:40:32.169Z"
+date: '2015-05-28T22:40:32.169Z'
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
+
+```jsx
+const x = hello()
+
+class Page extends React.Component {
+  render() {
+    return <div>Hello</div>
+  }
+}
+```
+
+```jsx{2,3,4}
+function Form() {
+  const [name, setName] = useState('Mary') // State variable 1
+  const [surname, setSurname] = useState('Poppins') // State variable 2
+  const [width, setWidth] = useState(window.innerWidth) // State variable 3
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  })
+
+  function handleNameChange(e) {
+    setName(e.target.value)
+  }
+
+  function handleSurnameChange(e) {
+    setSurname(e.target.value)
+  }
+
+  return (
+    <>
+      <input value={name} onChange={handleNameChange} />
+      <input value={surname} onChange={handleSurnameChange} />
+      <p>
+        Hello, {name} {surname}
+      </p>
+      <p>Window width: {width}</p>
+    </>
+  )
+}
+```
 
 ## On deer horse aboard tritely yikes and much
 
@@ -15,10 +58,12 @@ Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
 didn’t listen. She packed her seven versalia, put her initial into the belt and
 made herself on the way.
 
-* This however showed weasel
-* Well uncritical so misled
-  * this is very interesting
-* Goodness much until that fluid owl
+![Chinese Salty Egg](./salty_egg.jpg)
+
+- This however showed weasel
+- Well uncritical so misled
+  - this is very interesting
+- Goodness much until that fluid owl
 
 When she reached the first hills of the **Italic Mountains**, she had a last
 view back on the skyline of her hometown _Bookmarksgrove_, the headline of
