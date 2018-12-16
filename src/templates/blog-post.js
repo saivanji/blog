@@ -12,7 +12,10 @@ export default ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.spoiler}
+      />
       <div className="post">
         <header>
           <h1>{post.frontmatter.title}</h1>
@@ -60,6 +63,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        spoiler
       }
     }
   }
