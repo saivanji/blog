@@ -8,21 +8,11 @@ Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
 
-```jsx
-const x = hello()
-
-class Page extends React.Component {
-  render() {
-    return <div>Hello</div>
-  }
-}
-```
-
 ```jsx{2,3,4}
 function Form() {
-  const [name, setName] = useState('Mary') // State variable 1
-  const [surname, setSurname] = useState('Poppins') // State variable 2
-  const [width, setWidth] = useState(window.innerWidth) // State variable 3
+  const [name, setName] = useState('Mary') // variable 1
+  const [surname, setSurname] = useState('Poppins') // variable 2
+  const [width, setWidth] = useState(window.innerWidth) // variable 3
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth)

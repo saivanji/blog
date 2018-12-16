@@ -5,16 +5,20 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
+import { formatReadingTime } from '../utils/helpers'
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" keywords={['blog', 'gatsby', 'javascript', 'react']} />
+        <SEO
+          title="All posts"
+          keywords={['blog', 'gatsby', 'javascript', 'react']}
+        />
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -23,13 +27,22 @@ class BlogIndex extends React.Component {
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
+                  fontFamily: 'Montserrat, sans-serif',
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link
+                  style={{
+                    boxShadow: 'none',
+                    color: 'inherit',
+                  }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {node.frontmatter.date} • {formatReadingTime(node.timeToRead)}
+              </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
@@ -55,6 +68,7 @@ export const pageQuery = graphql`
           fields {
             slug
           }
+          timeToRead
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title

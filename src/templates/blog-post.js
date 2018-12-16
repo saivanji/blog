@@ -5,6 +5,7 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import { formatReadingTime } from '../utils/helpers'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <Bio />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -24,7 +26,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.date} • {formatReadingTime(post.timeToRead)}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -32,7 +34,6 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
 
         <ul
           style={{
@@ -44,20 +45,18 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <li>
-            {
-              previous &&
+            {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            }
+            )}
           </li>
           <li>
-            {
-              next &&
+            {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            }
+            )}
           </li>
         </ul>
       </Layout>
@@ -79,6 +78,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

@@ -151,3 +151,54 @@ pre[data-line] {
   float: left;
   min-width: 100%;
 }
+
+.bio {
+  display: flex;
+  /*border-bottom: 1px solid #ddd;*/
+  position: relative;
+}
+
+.bio p {
+  margin-bottom: 0.75rem;
+}
+
+/*
+.bio:before {
+  content: '';
+  width: 18px;
+  height: 8px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  margin: auto;
+}
+
+.bio:after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  background-color: #ddd;
+  margin: auto;
+}
+*/
+hr {
+  background: #ddd;
+}
+
+.social i {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.gatsby-resp-image-wrapper {
+  max-width: none !important;
+}
