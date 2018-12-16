@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Disqus from '../components/disqus'
 import { formatReadingTime } from '../utils'
 
 export default ({ data, pageContext, location }) => {
@@ -25,7 +26,7 @@ export default ({ data, pageContext, location }) => {
         </header>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
-
+        <Disqus />
         <ul className="post-pagination">
           <li>
             {previous && (
