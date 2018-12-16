@@ -4,8 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { rhythm } from '../utils/typography'
-import { formatReadingTime } from '../utils/helpers'
+import { formatReadingTime } from '../utils'
 
 class BlogIndex extends React.Component {
   render() {
@@ -26,7 +25,8 @@ class BlogIndex extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: `0.4375rem`,
+                  marginTop: `0`,
                   fontFamily: 'Montserrat, sans-serif',
                 }}
               >

@@ -4,8 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { rhythm, scale } from '../utils/typography'
-import { formatReadingTime } from '../utils/helpers'
+import { formatReadingTime } from '../utils'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,10 +19,11 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
+            fontSize: `0.83255rem`,
+            lineHeight: `1.75rem`,
             display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginBottom: `1.75rem`,
+            marginTop: `-1.75rem`,
           }}
         >
           {post.frontmatter.date} • {formatReadingTime(post.timeToRead)}
@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: `1.75rem`,
           }}
         />
 
