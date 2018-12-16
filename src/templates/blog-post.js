@@ -1,49 +1,29 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { formatReadingTime } from '../utils'
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+export default ({ data, pageContext, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
+  const { previous, next } = pageContext
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <Bio />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            fontSize: `0.83255rem`,
-            lineHeight: `1.75rem`,
-            display: 'block',
-            marginBottom: `1.75rem`,
-            marginTop: `-1.75rem`,
-          }}
-        >
-          {post.frontmatter.date} • {formatReadingTime(post.timeToRead)}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: `1.75rem`,
-          }}
-        />
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title={post.frontmatter.title} description={post.excerpt} />
+      <div className="post">
+        <header>
+          <h1>{post.frontmatter.title}</h1>
+          <p className="post-info">
+            {post.frontmatter.date} • {formatReadingTime(post.timeToRead)}
+          </p>
+        </header>
+        <article dangerouslySetInnerHTML={{ __html: post.html }} />
+        <hr />
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
+        <ul className="post-pagination">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -59,12 +39,10 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-      </Layout>
-    )
-  }
+      </div>
+    </Layout>
+  )
 }
-
-export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

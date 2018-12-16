@@ -23,9 +23,7 @@
     "prismjs": "^1.15.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "typeface-merriweather": "0.0.43",
-    "typeface-montserrat": "0.0.43"
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
