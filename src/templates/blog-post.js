@@ -9,6 +9,7 @@ import { formatReadingTime } from '../utils'
 export default ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
+  const keywords = post.frontmatter.keywords.split(', ')
   const { previous, next } = pageContext
 
   return (
@@ -16,6 +17,7 @@ export default ({ data, pageContext, location }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.spoiler}
+        keywords={keywords}
       />
       <div className="post">
         <header>
@@ -65,6 +67,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         spoiler
+        keywords
       }
     }
   }

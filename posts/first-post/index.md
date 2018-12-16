@@ -2,6 +2,7 @@
 title: First post
 date: '2018-12-16T23:40:32.169Z'
 spoiler: What is that blog about?
+keywords: Ivan Mironchik, Mironchik, aiven715, programming blog, software blog
 ---
 
 ![The beginning](./image.jpg)

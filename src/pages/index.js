@@ -11,10 +11,7 @@ export default ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title="All posts"
-        keywords={['blog', 'gatsby', 'javascript', 'react']}
-      />
+      <SEO title="All posts" keywords={data.site.siteMetadata.keywords} />
       <div className="posts">
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -44,6 +41,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        keywords
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

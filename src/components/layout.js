@@ -14,6 +14,9 @@ export default ({ title, children }) => (
     <div className="container">
       <Header title={title} />
       {children}
+      <footer className="footer">
+        <p>© Ivan Mironchik 2018</p>
+      </footer>
     </div>
   </>
 )

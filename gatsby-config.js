@@ -1,11 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Programming thoughts',
+    title: 'Passionated programming',
     author: 'Ivan Mironchik',
-    description: 'A starter blog demonstrating what Gatsby can do.',
+    description: 'Software Engineering blog',
     siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/',
+    keywords: ['aiven715', 'programming blog', 'software blog'],
     social: {
-      twitter: 'aiven715',
+      mail: 'mailto:aiven715@gmail.com',
+      github: '//github.com/aiven715',
+      twitter: '//twitter.com/aiven715',
+      stackoverflow: '//stackoverflow.com/users/10788188/aiven715',
+      linkedin: '//linkedin.com/in/aiven715',
+      facebook: '//facebook.com/aiven715',
     },
   },
   plugins: [

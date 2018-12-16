@@ -15,11 +15,24 @@ export default ({ title }) => (
               <Link to="/">{title}</Link>
             </h3>
             <div className="social">
-              <img src={withPrefix('/icons/github.svg')} />
-              <img src={withPrefix('/icons/twitter.svg')} />
-              <img src={withPrefix('/icons/stack-overflow.svg')} />
-              <img src={withPrefix('/icons/linkedin.svg')} />
-              <img src={withPrefix('/icons/facebook.svg')} />
+              <a href={social.mail}>
+                <img src={withPrefix('/icons/mail.svg')} />
+              </a>
+              <a href={social.github}>
+                <img src={withPrefix('/icons/github.svg')} />
+              </a>
+              <a href={social.twitter}>
+                <img src={withPrefix('/icons/twitter.svg')} />
+              </a>
+              <a href={social.stackoverflow}>
+                <img src={withPrefix('/icons/stack-overflow.svg')} />
+              </a>
+              <a href={social.linkedin}>
+                <img src={withPrefix('/icons/linkedin.svg')} />
+              </a>
+              <a href={social.facebook}>
+                <img src={withPrefix('/icons/facebook.svg')} />
+              </a>
             </div>
           </div>
           <div className="bio">
@@ -50,6 +63,14 @@ const dataQuery = graphql`
     site {
       siteMetadata {
         author
+        social {
+          mail
+          github
+          twitter
+          stackoverflow
+          linkedin
+          facebook
+        }
       }
     }
   }
