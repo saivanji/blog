@@ -44,12 +44,12 @@ export default ({ title }) => (
           </div>
           <div className="menu">
             <div>
-              <a href="#">Open source</a>
+              <Link to="/open-source">Open source</Link>
               &nbsp; &nbsp;
-              <a href="#">Hire me</a>
+              <Link to="/hire-me">Hire me</Link>
             </div>
             <div className="menu-right">
-              <a href="#">Subscribe</a>
+              <Link to="/subscribe">Subscribe</Link>
             </div>
           </div>
         </header>

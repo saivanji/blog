@@ -6,7 +6,34 @@
 }
 
 .page-header {
-  margin-bottom: 3.9375rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.page-header:before {
+  background-color: #fff;
+  width: 18px;
+  height: 1px;
+  bottom: -1px;
+}
+
+.page-header:after {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  bottom: -3px;
+  background-color: #ddd;
+}
+
+.page-header:before,
+.page-header:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -90,16 +117,17 @@ hr {
   margin-bottom: 1.75rem;
 }
 
-.post {
-  margin-top: 3.5rem;
-}
-
 .post h1 {
   margin: 0;
 }
 
 .post article + hr {
   margin-bottom: 1.75rem;
+}
+
+[aria-current='page'] {
+  color: inherit;
+  border-color: transparent;
 }
 
 .gatsby-resp-image-wrapper {
