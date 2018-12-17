@@ -18,7 +18,8 @@ export default ({ data, location }) => {
       <p>
         <a href="//github.com/aiven715/promise-hook">promise-hook</a> is a React
         library which leverages hooks conception to provide simple and
-        consistent way to handle async Promise interactions in React components.
+        consistent way to handle async Promise interactions in React
+        applications.
       </p>
     </Layout>
   )
