@@ -29,22 +29,24 @@ export default ({ data, pageContext, location }) => {
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
         <Disqus />
-        <ul className="post-pagination">
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        {(next || previous) && (
+          <ul className="post-pagination">
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        )}
       </div>
     </Layout>
   )
