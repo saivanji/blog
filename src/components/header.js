@@ -39,7 +39,7 @@ export default ({ title }) => (
             <img src={withPrefix('/images/avatar.jpg')} alt={author} />
             <p>
               Written by <strong>{author}</strong> independent software
-              consultant, specifying on building complex solutions
+              consultant, specifying on building complex web applications
             </p>
           </div>
           <div className="menu">
