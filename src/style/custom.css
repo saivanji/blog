@@ -102,15 +102,6 @@ hr {
   margin-bottom: 1.75rem;
 }
 
-.footer {
-  text-align: center;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 14px;
-}
-
 .gatsby-resp-image-wrapper {
   max-width: none !important;
 }
