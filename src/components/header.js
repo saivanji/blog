@@ -45,11 +45,9 @@ export default ({ title }) => (
           <div className="menu">
             <div>
               <Link to="/open-source">Open source</Link>
-              &nbsp; &nbsp;
-              <Link to="/hire-me">Hire me</Link>
             </div>
             <div className="menu-right">
-              <Link to="/subscribe">Subscribe</Link>
+              <Link to="/hire-me">Hire me</Link>
             </div>
           </div>
         </header>
