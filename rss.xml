@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Passionated programming]]></title><description><![CDATA[Software Engineering blog]]></description><link>https://gatsby-starter-blog-demo.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 21 Dec 2018 06:10:25 GMT</lastBuildDate><item><title><![CDATA[First post]]></title><description><![CDATA[Hello, my reader. This is the first post on my blog. Recently, I’ve realized that’s the right time to start giving back the knowledge…]]></description><link>https://gatsby-starter-blog-demo.netlify.com//first-post/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//first-post/</guid><pubDate>Sun, 16 Dec 2018 23:40:32 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8d4a08bdefc57f74148d1b11b0bfd2da/5defe/image.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.65421956684092%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAQP/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAFjlrYcspCH/8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIAAxESISL/2gAIAQEAAQUCuTZcMssPoWmK3C3f/8QAFREBAQAAAAAAAAAAAAAAAAAAEDH/2gAIAQMBAT8Bh//EABURAQEAAAAAAAAAAAAAAAAAABAx/9oACAECAQE/Aaf/xAAdEAABAgcAAAAAAAAAAAAAAAAAAQIRICExMlGR/9oACAEBAAY/AoZO2JTklj//xAAZEAADAQEBAAAAAAAAAAAAAAAAARExIWH/2gAIAQEAAT8his/RyilJfYp14jLENupUVqz/2gAMAwEAAgADAAAAEPcv/8QAFhEBAQEAAAAAAAAAAAAAAAAAAREA/9oACAEDAQE/EK4lbv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQIBAT8QwUcL/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBUWGB4f/aAAgBAQABPxAHEUeI9Eoia0FN7Mb7jhIlFlVlzqPQB5cwLMwtMQdAXa/J/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;The beginning&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8d4a08bdefc57f74148d1b11b0bfd2da/f8fb9/image.jpg&quot;
+        srcset=&quot;/static/8d4a08bdefc57f74148d1b11b0bfd2da/e8976/image.jpg 148w,
+/static/8d4a08bdefc57f74148d1b11b0bfd2da/63df2/image.jpg 295w,
+/static/8d4a08bdefc57f74148d1b11b0bfd2da/f8fb9/image.jpg 590w,
+/static/8d4a08bdefc57f74148d1b11b0bfd2da/85e3d/image.jpg 885w,
+/static/8d4a08bdefc57f74148d1b11b0bfd2da/d1924/image.jpg 1180w,
+/static/8d4a08bdefc57f74148d1b11b0bfd2da/9452e/image.jpg 1770w,
+/static/8d4a08bdefc57f74148d1b11b0bfd2da/5defe/image.jpg 2678w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Hello, my reader. This is the first post on my blog.&lt;/p&gt;
+&lt;p&gt;Recently, I’ve realized that’s the right time to start giving back the knowledge accumulated for years in my software engineering journey.&lt;/p&gt;
+&lt;p&gt;Here, I’ll be sharing my opinion on software engineering topics and everything which is related to it.&lt;/p&gt;
+&lt;p&gt;So, welcome to my blog and let’s have some fun 😉&lt;/p&gt;</content:encoded></item></channel></rss>
