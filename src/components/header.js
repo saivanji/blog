@@ -47,7 +47,7 @@ export default ({ title }) => (
               <Link to="/open-source">Open source</Link>
             </div>
             <div className="menu-right">
-              <Link to="/hire-me">Hire me</Link>
+              <a href={social.mail}>Hire me</a>
             </div>
           </div>
         </header>
