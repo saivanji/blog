@@ -13,7 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.5",
-    "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-images": "^3.1.16",
     "gatsby-remark-prismjs": "^3.0.0",
     "gatsby-remark-responsive-iframe": "^2.0.5",
     "gatsby-remark-smartypants": "^2.0.5",
@@ -26,11 +26,11 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^6.2.1",
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^2.0.1",
     "prettier": "^1.14.2",
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.0"
   },
   "license": "MIT",
   "main": "n/a",
